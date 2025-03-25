@@ -8,7 +8,7 @@
 # Структура проекта: 
 
 * Настройки проекта - Project Settings|Moon. Здесь хранятся указатели на различные ассеты - для удобного доступа из кода. 
-(Source/Moon/Public/SubSystems/ProjectSettings/MoonProjectSettings.h)
+(Source/Moon/Public/ProjectSettings/MoonProjectSettings.h)
 
 * BuildsManager – отвечает за постройку/снос зданий, а также, расчет ресурсов на основе этих конструкций.
 (Source/Moon/Public/SubSystems/BuildsManager.h)
