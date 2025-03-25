@@ -16,7 +16,7 @@
 * HUDManager - отвечает за создания виджетов/визуализаторов и их управлением.
 (Source/Moon/Public/SubSystems/HUDManager.h)
 
-* MeshesInstanceManager - отвечает за создания м управление экземплярами меша (mesh instance).
+* MeshesInstanceManager - отвечает за создания и управление экземплярами меша (mesh instance).
 (Source/Moon/Public/SubSystems/MeshesInstanceManager.h)
 
 * MoonPlayerController - отвечает за инпуты и управление самим игровым процессом.
