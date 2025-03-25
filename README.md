@@ -5,27 +5,27 @@
 ![1](https://github.com/user-attachments/assets/1ce61ad4-7b36-4788-9735-805da59bd96c)
 
 
-Структура проекта: 
+# Структура проекта: 
 
-Настройки проекта - Project Settings|Moon. Здесь хранятся указатели на различные ассеты - для удобного доступа из кода. 
+* Настройки проекта - Project Settings|Moon. Здесь хранятся указатели на различные ассеты - для удобного доступа из кода. 
 (Source/Moon/Public/SubSystems/ProjectSettings/MoonProjectSettings.h)
 
-# BuildsManager – отвечает за постройку/снос зданий, а также, расчет ресурсов на основе этих конструкций.
+* BuildsManager – отвечает за постройку/снос зданий, а также, расчет ресурсов на основе этих конструкций.
 (Source/Moon/Public/SubSystems/BuildsManager.h)
 
-# #HUDManager - отвечает за создания виджетов/визуализаторов и их управлением.
+* HUDManager - отвечает за создания виджетов/визуализаторов и их управлением.
 (Source/Moon/Public/SubSystems/HUDManager.h)
 
-# MeshesInstanceManager - отвечает за создания м управление экземплярами меша (mesh instance).
+* MeshesInstanceManager - отвечает за создания м управление экземплярами меша (mesh instance).
 (Source/Moon/Public/SubSystems/MeshesInstanceManager.h)
 
-# MoonPlayerController - отвечает за инпуты и управление самим игровым процессом.
+* MoonPlayerController - отвечает за инпуты и управление самим игровым процессом.
 (Source/Moon/Public/Main/MeshesInstanceManager.h)
 
-# MoonFunctionLibrary - Библиотека различных методов.
+* MoonFunctionLibrary - Библиотека различных методов.
 (Source/Moon/Public/MoonFunctionLibrary.h)
 
-Таблицы зданий/моcтов хранятся по пути Content/Data/DataTables
+# Таблицы зданий/моcтов хранятся по пути Content/Data/DataTables
 
 
 
