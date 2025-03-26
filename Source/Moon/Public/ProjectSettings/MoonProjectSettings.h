@@ -69,7 +69,7 @@ public:
     UPROPERTY(EditAnywhere, Config, Category = "Bridge", meta = (DisplayName = "Min bridge distance"))
     float minBridgeDistance = 100.f;
 
-    UPROPERTY(EditAnywhere, Config, Category = "Bride", meta = (DisplayName = "Max bridge distance"))
+    UPROPERTY(EditAnywhere, Config, Category = "Bridge", meta = (DisplayName = "Max bridge distance"))
     float maxBridgeDistance = 1000.f;
 
     UPROPERTY(EditAnywhere, Config, Category = "Visualizer", meta = (DisplayName = "Bridge line width"))

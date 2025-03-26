@@ -22,7 +22,7 @@
 * MoonPlayerController - отвечает за инпуты и управление самим игровым процессом.
 (Source/Moon/Public/Main/MeshesInstanceManager.h)
 
-* MoonFunctionLibrary - Библиотека различных методов.
+* MoonFunctionLibrary - библиотека различных методов.
 (Source/Moon/Public/MoonFunctionLibrary.h)
 
 # Таблицы зданий/моcтов хранятся по пути Content/Data/DataTables
