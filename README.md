@@ -7,17 +7,17 @@
 
 # Структура проекта: 
 
-* Настройки проекта - Project Settings|Moon. Здесь хранятся указатели на различные ассеты - для удобного доступа из кода. 
+* Настройки проекта - Project Settings|Moon. Здесь хранятся указатели на различные ассеты - для доступа из кода. 
 (Source/Moon/Public/ProjectSettings/MoonProjectSettings.h)
 
 * BuildsManager – отвечает за постройку/снос зданий, а также, расчет ресурсов на основе этих конструкций.
-(Source/Moon/Public/SubSystems/BuildsManager.h)
+(Source/Moon/Public/Managers/BuildsManager.h)
 
 * HUDManager - отвечает за создания виджетов/визуализаторов и их управлением.
-(Source/Moon/Public/SubSystems/HUDManager.h)
+(Source/Moon/Public/Managers/HUDManager.h)
 
 * MeshesInstanceManager - отвечает за создания и управление экземплярами меша (mesh instance).
-(Source/Moon/Public/SubSystems/MeshesInstanceManager.h)
+(Source/Moon/Public/Managers/MeshesInstanceManager.h)
 
 * MoonPlayerController - отвечает за инпуты и управление самим игровым процессом.
 (Source/Moon/Public/Main/MeshesInstanceManager.h)

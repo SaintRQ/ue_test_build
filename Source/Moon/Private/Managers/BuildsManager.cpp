@@ -1,7 +1,8 @@
 ﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "SubSystems/BuildsManager.h"
+#include "Managers/BuildsManager.h"
+
 #include "MoonFunctionLibrary.h"
 #include "Game/Builds/Build_Core.h"
 #include "Game/Bridges/Bridge_Core.h"
@@ -33,11 +34,18 @@ void UBuildsManager::Initialize(FSubsystemCollectionBase& Collection)
         maxDistanceForBridges = settings->maxBridgeDistance;
     }
 		
+    FWorldDelegates::OnPostWorldInitialization.AddUObject(this, &UBuildsManager::OnWorldInitialized);
 }
 
 void UBuildsManager::Deinitialize()
 {
 	Super::Deinitialize();
+}
+
+void UBuildsManager::OnWorldInitialized(UWorld* World, const UWorld::InitializationValues IVS)
+{
+    buildingsPool.Empty();
+    calculatedResources.Empty();
 }
 
 bool UBuildsManager::CreateBuilding(FName DataTableID, FTransform Transform, bool RecalculateResources)

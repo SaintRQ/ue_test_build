@@ -5,8 +5,8 @@
 
 #include "MoonFunctionLibrary.h"
 #include "Enums/GameModes.h"
-#include "SubSystems/BuildsManager.h"
-#include "SubSystems/HUDManager.h"
+#include "Managers/BuildsManager.h"
+#include "Managers/HUDManager.h"
 #include "Game/Builds/Build_Core.h"
 #include "Game/Bridges/Bridge_Core.h"
 
@@ -28,7 +28,7 @@ void AMoonPlayerController::SetupInputComponent()
 
     if(!InputComponent)
     {
-        UE_LOG(LogTemp, Error, TEXT("MoonPlayerController: InputComponent not valid."));
+        UE_LOG(LogTemp, Error, TEXT("MoonPlayerController: InputComponent is not valid."));
         return;
     }
 

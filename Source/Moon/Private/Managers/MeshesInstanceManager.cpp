@@ -1,7 +1,8 @@
 ﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "SubSystems/MeshesInstanceManager.h"
+#include "Managers/MeshesInstanceManager.h"
+
 #include "Game/Misc/WorldMeshesInstance.h"
 
 void UMeshesInstanceManager::Initialize(FSubsystemCollectionBase& Collection)

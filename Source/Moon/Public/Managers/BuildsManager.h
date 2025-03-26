@@ -41,6 +41,8 @@ private:
 
 	virtual void Deinitialize() override;
 
+	void OnWorldInitialized(UWorld* World, const UWorld::InitializationValues IVS);
+
 	FName DefineBridgeDataTableID(ABuild_Core* FirstBuilding, ABuild_Core* SecondBuilding) const;
 
 	float GetBuildingRadius(ABuild_Core* Building) const;

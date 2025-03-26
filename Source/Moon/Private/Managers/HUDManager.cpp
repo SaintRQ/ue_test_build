@@ -1,6 +1,6 @@
 ﻿// Fill out your copyright notice in the Description page of Project Settings.
 
-#include "SubSystems/HUDManager.h"
+#include "Managers/HUDManager.h"
 
 #include "Engine/World.h"
 #include "Engine/Engine.h"
@@ -8,7 +8,7 @@
 #include "Game/Widgets/GameHudWidget.h"
 #include "MoonFunctionLibrary.h"
 #include "Main/MoonPlayerController.h"
-#include "SubSystems/BuildsManager.h"
+#include "Managers/BuildsManager.h"
 #include "Game/Visualizers/BuildVisualizer.h"
 #include "Game/Visualizers/BridgeVisualizer.h"
 #include "Game/Visualizers/InteractVisualizer.h"
@@ -44,6 +44,9 @@ void UHUDManager::Deinitialize()
 
 void UHUDManager::WaitFullIntialization(UWorld* World, const UWorld::InitializationValues IVS)
 {
+	ClearAllVisualizers();
+	ClearAllSelectedTargets();
+
 	FTSTicker::GetCoreTicker().AddTicker(FTickerDelegate::CreateLambda([this](float DeltaTime)
 	{
 		static float time = 0;

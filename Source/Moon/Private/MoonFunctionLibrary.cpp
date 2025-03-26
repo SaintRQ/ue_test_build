@@ -4,7 +4,7 @@
 #include "MoonFunctionLibrary.h"
 #include "ProjectSettings/MoonProjectSettings.h"
 #include "Blueprint/UserWidget.h"
-#include "SubSystems/MeshesInstanceManager.h"
+#include "Managers/MeshesInstanceManager.h"
 
 UObject* UMoonFunctionLibrary::GetAssetByID(FName AssetID)
 {

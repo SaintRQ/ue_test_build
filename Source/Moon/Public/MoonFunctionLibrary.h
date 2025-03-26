@@ -38,6 +38,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "MoonLibrary", meta = (WorldContext = "Context", DefaultToSelf = "Context"))
 	static UHUDManager* GetHUDManager(const UObject* Context);
 
+	// Получить менеджер экземпляров мешей.
 	UFUNCTION(BlueprintCallable, Category = "MoonLibrary", meta = (WorldContext = "Context", DefaultToSelf = "Context"))
 	static UMeshesInstanceManager* GetMeshesInstanceManager(const UObject* Context);
 
